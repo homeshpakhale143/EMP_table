@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>display_delete.html</h1>
+        <table border="3px">
+            <tr>
+                <th>ENAME</th>
+                <th>EMPNO</th>
+                <th>SAL</th>
+                <th>JOB</th>
+                <th>HIREDATE</th>
+            </tr>
+            {% for edo in DEO %}
+            <tr>
+                <td>{{edo.ENAME}}</td>
+                <td>{{edo.EMPNO}}</td>
+                <td>{{edo.SAL}}</td>
+                <td>{{edo.JOB}}</td>
+                <td>{{edo.HIREDATE}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

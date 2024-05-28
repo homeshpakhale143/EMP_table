@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Display_selfjoins</h1>
+        <table border="=3px">
+            <tr>
+                <th>EMPNO</th>
+                <th>ENAME</th>
+                <th>JOB</th>
+                <th>MGR</th>
+                <th>MGR NAMES</th>
+                <th>DEPTNO</th>
+                <th>SAL</th>
+                
+            </tr>
+            
+            {% for SJO in ESJO %}
+            <tr>
+                <td>{{SJO.EMPNO}}</td>
+                <td>{{SJO.ENAME}}</td>
+                <td>{{SJO.JOB}}</td>
+                <td>{{SJO.MGR}}</td>
+                <td>{{SJO.MGR.ENAME}}</td>
+                <td>{{SJO.DEPTNO}}</td>
+                <td>{{SJO.SAL}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+    
+</body>
+</html>

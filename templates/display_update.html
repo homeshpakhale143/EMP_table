@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>display_update_method</h1>
+        <table border="3px">
+            <tr>
+                <!-- <th>EMPNO</th> -->
+                <th>ENAME</th>
+                <th>SAL</th>
+                <th>JOB</th>
+                <th>HIREDATE</th>
+                <th>COMM</th>
+                <th>DEPTNO</th>
+                <th>MgrNo</th>
+                
+            </tr>
+
+            {% for euo in EDO %}
+            <tr>
+
+                <!-- <td>{{euo.EMPNO}}<td> -->
+                <td>{{euo.ENAME}}</td>
+                <td>{{euo.SAL}}</td>
+                <td>{{euo.JOB}}</td>
+                <td>{{euo.HIREDATE}}</td>
+                <td>{{euo.COMM}}</td>
+                <td>{{euo.DEPTNO}}</td>
+                <td>{{euo.MgrNo}}</td>
+                
+            </tr>
+            
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

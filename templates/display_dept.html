@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Department Table</h1>
+        <table border="4px">
+            <tr>
+                <th>DEPTNO</th>
+                <th>DNAME</th>
+                <th>LOC</th>
+            </tr>
+        <tr>
+            {% for do in QLDO %}
+            <td>{{do.DEPTNO}}</td>
+            <td>{{do.DNAME}}</td>
+            <td>{{do.LOC}}</td>
+        </tr>
+        {% endfor %}
+    </center>
+</body>
+</html>

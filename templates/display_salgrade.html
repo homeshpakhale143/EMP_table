@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Salary_Grade Table</h1>
+        <table border="4px">
+            <tr>
+                <th>grade</th>
+                <th>losal</th>
+                <th>hisal</th>
+            </tr>
+        <tr>
+            {% for sgo in QLSG %}
+            <td>{{sgo.grade}}</td>
+            <td>{{sgo.losal}}</td>
+            <td>{{sgo.hisal}}</td>
+        </tr>
+        {% endfor %}
+    </center>
+</body>
+</html>
